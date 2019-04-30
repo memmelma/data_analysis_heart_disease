@@ -33,6 +33,10 @@
 	}
 }
 
+.footer__heading{
+	font-weight: 600;
+}
+
 .footer__data{
 	display: flex;
 	flex-grow: 1;
@@ -76,7 +80,7 @@
 .footer--dark{
 	background-color: $background-dark;
 
-	.footer__textLogo{
+	.footer__textLogo, .footer__heading{
 		color: #fff;
 	}
 	

@@ -1101,6 +1101,9 @@ select {
       min-width: 25%;
       font-size: 1.325rem; } }
 
+.footer__heading {
+  font-weight: 600; }
+
 .footer__data {
   display: flex;
   flex-grow: 1;
@@ -1135,7 +1138,7 @@ select {
 /*--- Modifiers---*/
 .footer--dark {
   background-color: #333C44; }
-  .footer--dark .footer__textLogo {
+  .footer--dark .footer__textLogo, .footer--dark .footer__heading {
     color: #fff; }
   .footer--dark .footer__inner {
     color: #d9d9d9; }
