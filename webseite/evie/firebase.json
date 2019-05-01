@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Evie",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
