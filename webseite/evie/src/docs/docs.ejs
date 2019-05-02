@@ -21,7 +21,7 @@
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
 						<h1 class="hero__title">Analyse und Modeling</h1>
-						<p class="hero__text">Um ein besseres Verstaendnis des Datensatzes zu bekommen, werden die Features mit Hilfe von Diagrammen visualisiert und analysiert. Anschliessend koennen dann Modelle trainiert werden, um eine Vorhersage zu treffen.</p>
+						<p style="text-align:center" class="hero__text">Um ein besseres Verstaendnis des Datensatzes zu bekommen, werden die Features mit Hilfe von Diagrammen visualisiert und analysiert. Anschliessend koennen dann Modelle trainiert werden, um eine Vorhersage zu treffen.</p>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 	<div class="steps landing__section">
 		<div class="container">
 			<h2>Welche Modelle haben wir verwendet?</h2>
-			<p>Im folgenden sind die verwendeten Modelle und ihre erziehlte Accuracy sowohl mit, als auch ohne Cross Validation aufgelistet.</p>
+			<p>Im folgenden sind die verwendeten Modelle und ihre erziehlte Accuracy sowohl mit, als auch ohne Grid Search inklusive Cross Validation aufgelistet.</p>
 		</div>
 		<div class="container">
 			<div class="steps__inner">
@@ -50,7 +50,7 @@
 						</div>
 						<h4>Dummy Classifier</h4>
 						<p class="step__text"><b>Accuracy:</b> 0.639</p>
-						<p class="step__text"><b>Accuracy CV:</b> -</p>
+						<p class="step__text"><b>Accuracy GS/CV:</b> -</p>
 					</div>
 				<div class="step">
 					<div class="step__media">
@@ -58,7 +58,7 @@
 					</div>
 					<h4>Linear Classifier</h4>
 					<p class="step__text"><b>Accuracy:</b> 0.737</p>
-					<p class="step__text"><b>Accuracy CV:</b> 0.885</p>
+					<p class="step__text"><b>Accuracy GS/CV:</b> 0.885</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
@@ -66,7 +66,7 @@
 					</div>
 					<h4>K-Nearest-Neighbor</h4>
 					<p class="step__text"><b>Accuracy:</b> 0.836</p>
-					<p class="step__text"><b>Accuracy CV:</b> 0.901</p>
+					<p class="step__text"><b>Accuracy GS/CV:</b> 0.901</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
@@ -74,7 +74,7 @@
 					</div>
 					<h4>Decision Tree</h4>
 					<p class="step__text"><b>Accuracy:</b> 0.819</p>
-					<p class="step__text"><b>Accuracy CV:</b> 0.819</p>
+					<p class="step__text"><b>Accuracy GS/CV:</b> 0.819</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
@@ -82,7 +82,7 @@
 					</div>
 					<h4>Random Forest</h4>
 					<p class="step__text"><b>Accuracy:</b> 0.819</p>
-					<p class="step__text"><b>Accuracy CV:</b> 0.868</p>
+					<p class="step__text"><b>Accuracy GS/CV:</b> 0.868</p>
 				</div>
 			</div>
 		</div>
@@ -202,7 +202,7 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Risiken eines kleinen Datensatzes</h2>
-					<p class="expanded__text">Der Datensatz hatte ungefaehr 300 Eintraege. Unter den Gesichtspunkten des Machine Learning ist dies als verhaeltnismaessig klein zu betrachten, da der Datensatz zudem in Trainings- und Testset eingeteilt werden muss, was diesen nochmals verkleinert. Damit ergeben sich das Risiko, dass die Repraesentativitaet und die Faehigkeit der Generalisierung auf unbekannte Eingangsdaten beeintraechtigt werden.</p>
+					<p class="expanded__text">Im Vergleich zu gängigen Machine Learning Projekten handelt sich bei dem verwendeten Datensatz mit ca. 300 Einträgen um einen sehr kleinen Datensatz, dessen Nutzung einige Risiken birgt. Die Accuracy von über 90% sollte daher unter den Risiken einer geringeren Repräsentativität und der Beeinträchtigung der Fähigkeit der Generalisierung des Modells betrachtet werden. Der Datensatz repräsentiert nur einen kleinen Teil der realen Welt und spiegelt damit nur wenige Krankheitsmuster wider. Es besteht damit die Gefahr des Overifittings, das bedeutet, dass das Modell möglicherweise zu stark an die gegebenen Daten angepasst ist und bei neuen, ungesehenen Daten schlechtere Vorhersagen trifft.</p>
 				</div>
 			</div>
 		</div>
