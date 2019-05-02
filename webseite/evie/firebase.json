@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "Evie",
+    "public": "docs",
     "ignore": [
       "firebase.json",
       "**/.*",
