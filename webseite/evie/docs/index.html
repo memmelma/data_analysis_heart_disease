@@ -5,13 +5,39 @@
 	<meta class="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Heart Disease</title>
-	<%_ currentPage = "" _%>
-	<% include ./partials/metadata %>
-	<link rel='stylesheet' href='<%= asset("css/style.min.css") %>' />
+	<meta name="description" content="An MIT licensed template bundled with a minimal style guide to build websites faster. Extemely lightweight, customizable and production-ready." />
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Evie Theme by unDraw" />
+<meta property="og:url" content="https://evie.undraw.co" />
+<meta property="og:description" content="An MIT licensed template bundled with a minimal style guide to build websites faster. Extemely lightweight, customizable and production-ready." />
+<meta property="og:image" content="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/assets/undraw__evie_meta.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Evie Theme by unDraw" />
+<meta name="twitter:description" content="An MIT licensed template bundled with a minimal style guide to build websites faster. Extemely lightweight, customizable and production-ready." />
+<meta name="twitter:image" content="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/assets/undraw__evie_meta.png" />
+<meta name="twitter:url" content="https://evie.undraw.co" />
+<link rel="shortcut icon" href="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/assets/favicon.ico">
+	<link rel='stylesheet' href='css/style.min.css' />
 </head>
 
 <body>
-	<% include ./partials/nav %>
+	<div class="navbar navbar--extended">
+	<nav class="nav__mobile"></nav>
+	<div class="container">
+		<div class="navbar__inner">
+			<a href='/' class="navbar__logo">Heart Disease <sup>Ai</sup></a>
+			<nav class="navbar__menu">
+				<ul>
+					<li><a href="/docs">Documentation</a></li>
+					<li><a href="https://github.com/memmelma/kuenstliche_intelligenz" target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Github</a></li>
+				</ul>
+			</nav>
+			<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+		</div>
+	</div>
+</div>
 	<!-- Hero unit -->
 	<div class="hero">
 		<div class="hero__overlay hero__overlay--gradient"></div>
@@ -24,7 +50,7 @@
 						<p class="hero__text">Ein weit verbreiteter Anwendungsbereich von Machine Learning ist die medizinische Diganostik, die durch ihre Interaktion mit künstlicher Intelligenz tiefgründigere Zusammenhänge zwischen Krankheiten und ihren Ursachen aufdecken kann. Birgt die maschinell gestützte Diagnose selbst einige Risiken, profitieren Ärzte dennoch durch die Unterstützung eines repräsentativen, trainierten Modells, da Erfahrungswerte aus Millionen von Patientendaten zu einer Diagnose heranzgezogen werden können.</p>
 						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent">Download
 							Notebook</a>
-						<a href="/docs.html" class="button hero__button">Documentation</a>
+						<a href="/docs" class="button hero__button">Documentation</a>
 					</div>
 				</div>
 			</div>
@@ -124,9 +150,60 @@
 			</div>
 		</div>
 	</div>
-	<% include ./partials/footer %>
-	<script src='<%= asset("js/app.min.js") %>'></script>
-	<% include ./partials/analytics %>
+	<div class="footer footer--dark">
+	<div class="container">
+		<div class="footer__inner">
+			<a href='/' class="footer__textLogo">Heart Disease</a>
+			<div class="footer__data">
+				<div class="footer__data__item">
+					<div class="footer__row">
+						<span class="footer__heading">Content</span>
+					</div>
+					<div class="footer__row">
+						by Lea Schneider
+					</div>
+					<div class="footer__row">
+						by Marius Memmel
+					</div>
+					<div class="footer__row">
+						by Paul Hermany
+					</div>
+					<div class="footer__row">
+						by Clemens Ulbrich
+					</div>
+				</div>
+				<div class="footer__data__item">
+					<div class="footer__row">
+						<span class="footer__heading">Theme</span>
+					</div>
+					<div class="footer__row">
+						Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina
+							Limpitsouni</a>
+					</div>
+					<div class="footer__row">
+						Code/design by <a href="https://twitter.com/anges244" target="_blank"
+							class="footer__link">Aggelos Gesoulis</a>
+					</div>
+				</div>
+				<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="https://github.com/memmelma/kuenstliche_intelligenz" target="_blank" class="footer__link">GitHub</a>
+					</div>
+					<div class="footer__row">
+						<a href="/additional" class="footer__link">MIT license</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='js/app.min.js'></script>
+	
+<script type="text/javascript">
+	var trackOutboundLink = function(url,type,additional) {
+		console.log('Click click...');
+	};
+</script>
+
 </body>
 
 </html>
