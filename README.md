@@ -16,18 +16,18 @@ The main notebook is called ```heart_jupyter_notebook_master```. It contains the
 2. Data Exploration & Visualization
 3. Preprocessing
 4. Modeling
-⋅⋅* Dummy Classifier
-⋅⋅* SGDC (Linear) Classifier
-⋅⋅* Decision Tree Classifier
-⋅⋅* K-Nearest-Neighbor Classifier
-⋅⋅* Random Forest Classifier
+* Dummy Classifier
+* SGDC (Linear) Classifier
+* Decision Tree Classifier
+* K-Nearest-Neighbor Classifier
+* Random Forest Classifier
 5. Summary
 6. Additional Models
-⋅⋅* XGBoost
-⋅⋅* Neural Net with Keras
+* XGBoost
+* Neural Net with Keras
 
 ## Website
 To present the project, a website was set up. The source code can be found in the ```/website``` directory. For the design the Evie template by [unDraw](https://undraw.co/evie) was used. The website can be accesed under this [link](ki.mariusmemmel.com).
 
 ## Kaggle
-The notebook can also be found on [Kaggle](https://www.kaggle.com/veygam/ki-project-heart-disease)
+The notebook can also be found on [Kaggle](https://www.kaggle.com/veygam/ki-project-heart-disease).
