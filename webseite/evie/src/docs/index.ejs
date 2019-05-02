@@ -21,11 +21,8 @@
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
 						<h1 class="hero__title">Risikofaktoren für Herzkrankheiten erkennen</h1>
-						<p class="hero__text">Evie is an MIT licensed template bundled with a minimal style guide to
-							build websites faster. It is extemely lightweight, customizable and works perfectly on
-							modern browsers.</p>
-						<a href="/downloads/evie_theme.zip" class="button button__accent"
-							onclick="trackOutboundLink('/downloads/evie_theme.zip','Download Notebook','Theme')">Download
+						<p class="hero__text">Ein weit verbreiteter Anwendungsbereich von Machine Learning ist die medizinische Diganostik, die durch ihre Interaktion mit künstlicher Intelligenz tiefgründigere Zusammenhänge zwischen Krankheiten und ihren Ursachen aufdecken kann. Birgt die maschinell gestützte Diagnose selbst einige Risiken, profitieren Ärzte dennoch durch die Unterstützung eines repräsentativen, trainierten Modells, da Erfahrungswerte aus Millionen von Patientendaten zu einer Diagnose heranzgezogen werden können.</p>
+						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent">Download
 							Notebook</a>
 						<a href="/docs" class="button hero__button">Documentation</a>
 					</div>
@@ -55,21 +52,22 @@
 						<img src="./images/undraw_creation.svg" class="step__image">
 					</div>
 					<h4>Features</h4>
-					<p class="step__text">Anzahl der Features</p>
+					<p class="step__text">Die 13 genutzten Features beinhalten Ergebnisse medizinischer Untersuchungen, wie zum Beispiel EKG und MRT Aufnahmen.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_doctor.svg" class="step__image">
 					</div>
 					<h4>Daten</h4>
-					<p class="step__text">Welche Daten haben wir?</p>
+					<p class="step__text">Verwendeter Datensatz von <a href="https://www.kaggle.com/ronitf/heart-disease-uci"><u>Kaggle</u></a>.
+					Der Original Datensatz stammt von der <a href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease"><u>University of California Irvine</u></a>.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_design_inspiration.svg" class="step__image">
 					</div>
 					<h4>Qualität</h4>
-					<p class="step__text">Die Datenelemente waren alle vollständig eingetragen. Es gab lediglich ein Duplikat.</p>
+					<p class="step__text">Der Datensatz weisst eine sehr hohe Qualitaet auf. Auch kategorische sind bereits mit Dummy Werten ersetzt.</p>
 				</div>
 			</div>
 		</div>
@@ -83,9 +81,7 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Was wollten wir erreichen?</h2>
-					<p class="expanded__text">Evie brings you the pages you'll need and the structure to create your
-						own, with almost nothing to learn. It is minimal and mostly styles plain elements. There are
-						only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+					<p class="expanded__text">Ziel ist mithilfe eines geeigneten Modells die Praesenz einer Herzkrankheit moeglichst genau vorherzusagen. Das Risiko einer Falschdiagnose soll hierbei hinsichtlich gravierender medizinischer Konsequenzen minimiert werden. Bezogen auf die Machine Learning Problematik kann dieses Problem als Binary Classification beschrieben werden.</p>
 				</div>
 			</div>
 		</div>
@@ -98,8 +94,7 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Was haben wir erreicht?</h2>
-					<p class="expanded__text">Evie has zero dependencies and uses vanilla JavaScript for a few functions
-						with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+					<p class="expanded__text">Durch das Trainieren verschiedener Modelle und Optimierung der zugehoerigen Stellschrauben (Hyperparameter), konnten mehrere Loesungsansaetze evaluiert werden. Durch Einsatz des K-Nearest-Neighbor Algorithmus wurde eine Accuracy von ueber 0.9 erreicht. Dies bedeutet, dass auf Basis der eingegebenen Daten eine Herzkrankheit zu 90% festgestellt werden kann.</p>
 				</div>
 			</div>
 		</div>
@@ -124,8 +119,7 @@
 				<h2 class="cta__title">Selbst ausprobieren</h2>
 				<p class="cta__sub cta__sub--center">Lade dir unser Jupyter Notebook und den Datensatz herunter und
 					führe die Analysen selbst durch.</p>
-				<a href="/downloads/evie_theme.zip" class="button button__accent"
-					onclick="trackOutboundLink('/downloads/evie_theme.zip','Download Notebook','Theme')">Download
+				<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent">Download
 					Notebook</a>
 			</div>
 		</div>
