@@ -2,6 +2,9 @@
 Evie/
 docs/
 
+# firebase
+*.cache
+
 # Logs
 logs
 *.log
