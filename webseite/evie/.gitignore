@@ -1,6 +1,6 @@
 # build output
-Evie/
-docs/
+/Evie/
+/docs/
 
 # firebase
 *.cache

@@ -8,6 +8,9 @@
 	<%_ currentPage = "" _%>
 	<% include ./partials/metadata %>
 	<link rel='stylesheet' href='<%= asset("css/style.min.css") %>' />
+	<link rel="manifest" href="/manifest.json">
+
+	<meta name="theme-color" content="#06d19c" />
 </head>
 
 <body>
@@ -21,9 +24,20 @@
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
 						<h1 class="hero__title">Risikofaktoren für Herzkrankheiten erkennen</h1>
-						<p style="text-align:center" class="hero__text">Ein weit verbreiteter Anwendungsbereich von Machine Learning ist die medizinische Diganostik, die durch ihre Interaktion mit künstlicher Intelligenz tiefgründigere Zusammenhänge zwischen Krankheiten und ihren Ursachen aufdecken kann. Birgt die maschinell gestützte Diagnose selbst einige Risiken, profitieren Ärzte dennoch durch die Unterstützung eines repräsentativen, trainierten Modells, da Erfahrungswerte aus Millionen von Patientendaten zu einer Diagnose heranzgezogen werden können.</p>
-						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent" target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Download von GitHub</a>
-						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent" target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Ausfuehren auf Kaggle</a>
+						<p style="text-align:center" class="hero__text">Ein weit verbreiteter Anwendungsbereich von
+							Machine Learning ist die medizinische Diganostik, die durch ihre Interaktion mit künstlicher
+							Intelligenz tiefgründigere Zusammenhänge zwischen Krankheiten und ihren Ursachen aufdecken
+							kann. Birgt die maschinell gestützte Diagnose selbst einige Risiken, profitieren Ärzte
+							dennoch durch die Unterstützung eines repräsentativen, trainierten Modells, da
+							Erfahrungswerte aus Millionen von Patientendaten zu einer Diagnose heranzgezogen werden
+							können.</p>
+						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent"
+							target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Download
+							von GitHub</a>
+						<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent"
+							target="_blank"
+							onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Ausfuehren auf
+							Kaggle</a>
 						<a href="/docs.html" class="button hero__button">Dokumentation</a>
 					</div>
 				</div>
@@ -37,7 +51,7 @@
 				style="enable-background:new 0 0 512 512;" xml:space="preserve">
 				<path
 					d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z" />
-				</svg>
+			</svg>
 		</span>
 	</div>
 	<div class="steps landing__section">
@@ -51,22 +65,27 @@
 						<img src="./images/undraw_creation.svg" class="step__image">
 					</div>
 					<h4>Features</h4>
-					<p class="step__text">Die 13 genutzten Features beinhalten Ergebnisse medizinischer Untersuchungen, wie zum Beispiel EKG und MRT Aufnahmen.</p>
+					<p class="step__text">Die 13 genutzten Features beinhalten Ergebnisse medizinischer Untersuchungen,
+						wie zum Beispiel EKG und MRT Aufnahmen.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_design_inspiration.svg" class="step__image">
 					</div>
 					<h4>Qualität</h4>
-					<p class="step__text">Der Datensatz weisst eine sehr hohe Qualitaet auf. Auch kategorische sind bereits mit Dummy Werten ersetzt.</p>
+					<p class="step__text">Der Datensatz weisst eine sehr hohe Qualitaet auf. Auch kategorische sind
+						bereits mit Dummy Werten ersetzt.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_doctor.svg" class="step__image">
 					</div>
 					<h4>Quelle</h4>
-					<p class="step__text">Verwendeter Datensatz von <a href="https://www.kaggle.com/ronitf/heart-disease-uci"><u>Kaggle</u></a>.
-					Der Original Datensatz stammt von der <a href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease"><u>University of California Irvine</u></a>.</p>
+					<p class="step__text">Verwendeter Datensatz von <a
+							href="https://www.kaggle.com/ronitf/heart-disease-uci"><u>Kaggle</u></a>.
+						Der Original Datensatz stammt von der <a
+							href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease"><u>University of California
+								Irvine</u></a>.</p>
 				</div>
 			</div>
 		</div>
@@ -80,7 +99,10 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Was wollten wir erreichen?</h2>
-					<p class="expanded__text">Ziel ist mithilfe eines geeigneten Modells die Präsenz einer Herzkrankheit möglichst genau vorherzusagen. Das Risiko einer Falschdiagnose soll hierbei hinsichtlich gravierender medizinischer Konsequenzen minimiert werden. Bezogen auf die Machine Learning Problematik kann dieses Problem als Binary Classification beschrieben werden.</p>
+					<p class="expanded__text">Ziel ist mithilfe eines geeigneten Modells die Präsenz einer Herzkrankheit
+						möglichst genau vorherzusagen. Das Risiko einer Falschdiagnose soll hierbei hinsichtlich
+						gravierender medizinischer Konsequenzen minimiert werden. Bezogen auf die Machine Learning
+						Problematik kann dieses Problem als Binary Classification beschrieben werden.</p>
 				</div>
 			</div>
 		</div>
@@ -93,7 +115,11 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Was haben wir erreicht?</h2>
-					<p class="expanded__text">Durch das Trainieren verschiedener Modelle und Optimierung der zugehörigen Stellschrauben (Hyperparameter), konnten mehrere Lösungsansätze evaluiert werden. Durch Einsatz des K-Nearest-Neighbor Algorithmus wurde eine Accuracy von über 0.9 erreicht. Dies bedeutet, dass auf Basis der eingegebenen Daten eine Herzkrankheit zu 90% korrekt diagnostiziert werden kann.</p>
+					<p class="expanded__text">Durch das Trainieren verschiedener Modelle und Optimierung der zugehörigen
+						Stellschrauben (Hyperparameter), konnten mehrere Lösungsansätze evaluiert werden. Durch Einsatz
+						des K-Nearest-Neighbor Algorithmus wurde eine Accuracy von über 0.9 erreicht. Dies bedeutet,
+						dass auf Basis der eingegebenen Daten eine Herzkrankheit zu 90% korrekt diagnostiziert werden
+						kann.</p>
 				</div>
 			</div>
 		</div>
@@ -117,9 +143,14 @@
 			<div class="cta__inner">
 				<h2 class="cta__title">Selbst ausprobieren</h2>
 				<p class="cta__sub cta__sub--center">Lade dir unser Jupyter Notebook und den Datensatz herunter und
-					führe die Analysen selbst durch. Oder sieh dir unseren Kaggle Kernel an, welcher ganz bequem im Browser betrachtet werden kann.</p>
-				<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent" target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Download von GitHub</a>
-				<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent" target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Ausführen auf Kaggle</a>
+					führe die Analysen selbst durch. Oder sieh dir unseren Kaggle Kernel an, welcher ganz bequem im
+					Browser betrachtet werden kann.</p>
+				<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent"
+					target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Download von
+					GitHub</a>
+				<a href="https://github.com/memmelma/kuenstliche_intelligenz" class="button button__accent"
+					target="_blank" onclick="trackOutboundLink('http://undraw.co','Redirect','unDraw')">Ausführen auf
+					Kaggle</a>
 			</div>
 		</div>
 	</div>
